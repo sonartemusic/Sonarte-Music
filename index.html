@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sonarte — Tienda de Instrumentos</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- APP CONTAINER -->
+  <div id="app">
+    <!-- HEADER -->
+    <header class="site-header" role="banner">
+      <div class="topbar">
+        <div class="brand" id="brand">
+          <img src="img/logo.png" alt="Logo Sonarte" class="logo" />
+          <span class="sr-only">Sonarte - Tienda de instrumentos</span>
+        </div>
+
+        <div class="search-cart" role="search">
+          <label for="globalSearch" class="sr-only">Buscar productos</label>
+          <input id="globalSearch" type="search" placeholder="Buscar: guitarra, MIDI, in-ear..." aria-label="Buscar productos" />
+          <button id="clearSearch" class="icon-btn" title="Limpiar búsqueda" aria-label="Limpiar búsqueda">✖</button>
+
+          <button id="cartToggle" class="cart-btn" aria-haspopup="dialog" aria-controls="cartPanel" aria-expanded="false">
+            🛒 <span id="cartCount" class="cart-count">0</span>
+            <span class="sr-only">Abrir carrito</span>
+          </button>
+
+          <button id="menuToggle" class="icon-btn menu-btn" aria-controls="mainNav" aria-expanded="false" aria-label="Menú">
+            ☰
+          </button>
+        </div>
+      </div>
+
+      <nav id="mainNav" class="main-nav" role="navigation" aria-label="Menú principal">
+        <ul>
+          <li><a href="#/" data-route="/">Inicio</a></li>
+          <li><a href="#/productos" data-route="/productos">Instrumentos</a></li>
+          <li><a href="#/accesorios" data-route="/accesorios">Accesorios</a></li>
+          <li><a href="#/nosotros" data-route="/nosotros">Nosotros</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- MAIN (sections will be shown/hidden by JS) -->
+    <main id="main" role="main">
+      <!-- HOME -->
+      <section id="home" class="page page--active" aria-labelledby="homeTitle">
+        <header class="hero">
+          <div class="hero-content">
+            <h1 id="homeTitle">Sonarte — instrumentos y equipo profesional</h1>
+            <p>Guitarras, teclados MIDI, secuencias, monitores In-Ear y todo para tu estudio.</p>
+            
+            
+
+          </div>
+        </header>
+
+        <section class="featured" aria-labelledby="featuredTitle">
+          <h2 id="featuredTitle">Productos destacados</h2>
+          <div id="featuredGrid" class="grid"></div>
+        </section>
+      </section>
+
+
+      <!-- PRODUCTOS -->
+      <section id="productos" class="page" aria-labelledby="productosTitle">
+        <div class="page-header">
+          <h2 id="productosTitle">Catálogo</h2></center>
+          <div class="filters">
+            <label for="categoryFilter" class="sr-only">Filtrar por categoría</label>
+            <select id="categoryFilter" aria-label="Filtrar por categoría">
+              <option value="all">Todas las categorías</option>
+              <option value="Instrumento">Instrumentos</option>
+              <option value="Accesorio">Accesorios</option>
+              <option value="MIDI">MIDI / Electrónica</option>
+              <option value="Secuencia">Secuencias</option>
+            </select>
+            <label for="sortSelect" class="sr-only">Ordenar</label>
+            <select id="sortSelect" aria-label="Ordenar productos">
+              <option value="relevance">Más relevantes</option>
+              <option value="price-asc">Precio: menor a mayor</option>
+              <option value="price-desc">Precio: mayor a menor</option>
+            </select>
+          </div>
+        </div>
+        <section id="estudio" class="page" aria-labelledby="estudioTitle">
+  <h2 id="estudioTitle">Estudio / Grabación</h2>
+  <div id="studioGrid" class="grid"></div>
+</section>
+
+
+        <div id="productsGrid" class="grid product-grid" aria-live="polite"></div>
+      </section>
+
+      <!-- ACCESORIOS (subset of productos) -->
+      <section id="accesorios" class="page" aria-labelledby="accesoriosTitle">
+        <h2 id="accesoriosTitle">Accesorios & Monitores</h2>
+        <div id="accessoriesGrid" class="grid"></div>
+      </section>
+
+      <!-- NOSOTROS -->
+      <!-- SECCIÓN NOSOTROS (en banner azul dentro del inicio) -->
+<section id="nosotros" class="home-extra">
+  <h2>Sobre Nosotros</h2>
+  <p>
+    En <strong>Sonarte</strong> llevamos más de una década conectando a músicos con su sonido.
+    Ofrecemos instrumentos, accesorios y equipos profesionales con asesoría experta,
+    uniendo tecnología y arte en cada nota.
+  </p>
+</section>
+
+
+      <!-- CONTACTO -->
+      <section id="contacto" class="home-extra" aria-labelledby="contactoTitle">
+        <h2 id="contactoTitle">Contacto</h2>
+        <form id="contactForm" class="contact-form" novalidate>
+          <label class="sr-only" for="c_name">Nombre</label>
+          <input id="c_name" type="text" placeholder="Tu nombre" required />
+          <label class="sr-only" for="c_email">Correo</label>
+          <input id="c_email" type="email" placeholder="Tu correo" required />
+          <label class="sr-only" for="c_msg">Mensaje</label>
+          <textarea id="c_msg" placeholder="Mensaje" rows="4" required></textarea>
+          <div class="form-actions">
+            <button type="submit" class="btn-primary">Enviar</button>
+          </div>
+          <p id="contactFeedback" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+
+
+    </main>
+
+
+
+    <!-- FOOTER -->
+    <footer role="contentinfo">
+      <div class="footer-grid">
+        <div>
+          <h4>Sonarte</h4>
+          <p>Tu tienda de instrumentos.</p>
+        </div>
+        <div>
+          <h4>Enlaces</h4>
+          <ul>
+            <li><a href="#/productos">Productos</a></li>
+            <li><a href="#/contacto">Contacto</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Suscríbete</h4>
+          <form id="subscribeForm" class="subscribe-form">
+            <label class="sr-only" for="subEmail">Correo</label>
+            <input id="subEmail" type="email" placeholder="Tu correo" />
+            <button type="submit" class="btn-primary">Suscribirme</button>
+          </form>
+        </div>
+      </div>
+      <p class="copy">&copy; 2025 Sonarte. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- SIDEPANEL CARRITO (SPA style) -->
+    <aside id="cartPanel" class="cart-panel" role="dialog" aria-modal="false" aria-labelledby="cartTitle" hidden>
+      <header class="cart-header">
+        <h2 id="cartTitle">Tu carrito</h2>
+        <button id="closeCartPanel" class="icon-btn" aria-label="Cerrar carrito">✖</button>
+      </header>
+      <div id="cartPanelItems" class="cart-panel-items" tabindex="0" aria-live="polite"></div>
+
+      <div class="cart-panel-footer">
+        <div id="cartPanelTotals" class="order-totals"></div>
+        <div class="panel-actions">
+          <button id="emptyCartBtn" class="btn-secondary">Vaciar</button>
+          <button id="goCheckoutBtn" class="btn-primary">Pagar</button>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <script src="script.js" defer></script>
+
+
+<!-- MODAL CHECKOUT -->
+<div id="checkoutModal" class="modal" hidden>
+  <div class="modal-content checkout-modal">
+    <button id="closeCheckout" class="close">✖</button>
+
+    <h3>Confirmar Pedido</h3>
+
+    <form id="checkoutFormModal" class="checkout-form">
+      <input id="fullName" type="text" placeholder="Nombre Completo" required>
+      <input id="email" type="email" placeholder="Correo" required>
+      <input id="address" type="text" placeholder="Dirección" required>
+      <input id="cardNumber" type="text" placeholder="Número de Tarjeta" required>
+      <div id="checkoutTotalsModal"></div>
+      <p id="checkoutFeedbackModal" class="feedback"></p>
+
+      <button id="confirmOrderBtn" class="btn-primary" disabled>Confirmar Pedido</button>
+    </form>
+  </div>
+</div>
+
+<!-- MODAL SUCCESS -->
+<div id="successModal" class="modal" hidden>
+  <div class="modal-content success-box">
+    <h3>✅ Pedido confirmado</h3>
+    <p>¡Gracias por comprar en SONARTE!</p>
+    <p id="successMsg"></p>
+    <button id="continueShopping" class="btn-primary">Seguir Comprando</button>
+  </div>
+</div>
+
+<!-- MODAL PRODUCTO -->
+<div id="productModal" class="modal" hidden>
+  <div class="modal-content">
+    <button id="closeModal" class="close">✖</button>
+    <div id="modalBody"></div>
+  </div>
+
+
+<!-- coloca el script justo antes de cerrar el body -->
+<script>
+  // Esperar que toda la página cargue
+  window.addEventListener("DOMContentLoaded", () => {
+    if (typeof renderFeatured === "function") {
+      renderFeatured();
+    }
+  });
+</script>
+<script src="script.js"></script>
+</body>
+</html>
+
+
+</body>
+</html>
