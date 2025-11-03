@@ -30,7 +30,7 @@ const PRODUCTS = [
     name: "Monitores Yamaha HS5",
     category: "Accesorio",
     price: 1300000,
-    img: "hs5.jpg",
+    img: "HS5.jpg",
     desc: "Monitores de referencia profesionales de 5 pulgadas con sonido claro y respuesta plana.",
   },
 
