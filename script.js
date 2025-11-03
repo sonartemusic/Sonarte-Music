@@ -9,12 +9,12 @@
 
 // ---------- Datos del catálogo (puedes editar/añadir) ----------
 const PRODUCTS = [
-  { id: 'gtr-ac-01', name: 'Guitarra Acústica Fender', category: 'Instrumento', price: 150000, badge: 'Oferta', img: 'img/ACO.jpg' },
-  { id: 'kbd-ym-01', name: 'Teclado Yamaha', category: 'MIDI', price: 350000, img: 'img/yam.jpg' },
+  { id: 'gtr-ac-01', name: 'Guitarra Acústica Fender', category: 'Instrumento', price: 150000, badge: 'Oferta', img: 'ACO.jpg' },
+  { id: 'kbd-ym-01', name: 'Teclado Yamaha', category: 'MIDI', price: 350000, img: 'yam.jpg' },
   { id: 'in-ear-01', name: 'In-Ear KZ EDX Pro', category: 'Accesorio', price: 80000, img: 'EDX.jpg', badge: 'Nuevo' },
   { id: 'midi-kb-01', name: 'Controlador MIDI 49 teclas', category: 'MIDI', price: 420000, img: 'midi.jpg' },
   { id: 'seq-01', name: 'Paquete secuencias EDM', category: 'Secuencia', price: 45000, img: 'sec.png' },
-  { id: 'amp-01', name: 'Amplificador 30W Fender', category: 'Accesorio', price: 220000, img: 'img/30w.jpg' },
+  { id: 'amp-01', name: 'Amplificador 30W Fender', category: 'Accesorio', price: 220000, img: '30w.jpg' },
 
   // 🎧 Monitores de estudio
   {
@@ -22,7 +22,7 @@ const PRODUCTS = [
     name: "Monitores Behringer Studio 50USB",
     category: "Accesorio",
     price: 850000,
-    img: "img/50usb.jpg",
+    img: "50usb.jpg",
     desc: "Par de monitores activos de 5\" con entradas USB y RCA. Sonido preciso y balanceado para mezcla y producción.",
   },
   {
@@ -30,7 +30,7 @@ const PRODUCTS = [
     name: "Monitores Yamaha HS5",
     category: "Accesorio",
     price: 1300000,
-    img: "img/hs5.jpg",
+    img: "hs5.jpg",
     desc: "Monitores de referencia profesionales de 5 pulgadas con sonido claro y respuesta plana.",
   },
 
@@ -40,7 +40,7 @@ const PRODUCTS = [
     name: "Audífonos de Estudio Audio-Technica ATH-M40x",
     category: "Accesorio",
     price: 690000,
-    img: "img/m40x.jpg",
+    img: "m40x.jpg",
     desc: "Audífonos cerrados de monitoreo profesional, gran comodidad y respuesta precisa.",
   },
   {
@@ -48,7 +48,7 @@ const PRODUCTS = [
     name: "Audífonos In-Ear Shure SE215",
     category: "Accesorio",
     price: 880000,
-    img: "img/Shure.jpg",
+    img: "Shure.jpg",
     desc: "In-ear profesionales con aislamiento de ruido y sonido detallado. Cable desmontable reforzado.",
   },
 
@@ -58,7 +58,7 @@ const PRODUCTS = [
     name: "Behringer UMC22 U-Phoria",
     category: "MIDI",
     price: 480000,
-    img: "img/umc.jpg",
+    img: "umc.jpg",
     desc: "Interface de audio USB con preamplificador MIDAS. Ideal para home studio.",
   },
   {
@@ -66,7 +66,7 @@ const PRODUCTS = [
     name: "Focusrite Scarlett 2i2 (3rd Gen)",
     category: "MIDI",
     price: 1150000,
-    img: "img/212.jpg",
+    img: "212.jpg",
     desc: "Interface de audio USB con dos entradas combo y excelente calidad de grabación.",
   },
 
@@ -76,7 +76,7 @@ const PRODUCTS = [
     name: "Shure SM58",
     category: "Instrumento",
     price: 750000,
-    img: "img/sm.jpg",
+    img: "sm.jpg",
     desc: "Micrófono dinámico vocal, estándar de la industria por su durabilidad y sonido natural.",
   },
   {
@@ -84,7 +84,7 @@ const PRODUCTS = [
     name: "Behringer B-1 Condenser",
     category: "Instrumento",
     price: 680000,
-    img: "img/b1.jpg",
+    img: "b1.jpg",
     desc: "Micrófono de condensador cardioide ideal para voces e instrumentos acústicos.",
   },
   {
@@ -92,7 +92,7 @@ const PRODUCTS = [
     name: "AKG P120 Condenser",
     category: "Instrumento",
     price: 590000,
-    img: "img/akg.jpg",
+    img: "akg.jpg",
     desc: "Micrófono condensador versátil con cápsula de 2/3” y respuesta suave.",
   },
 ];
