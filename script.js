@@ -10,7 +10,7 @@
 // ---------- Datos del catálogo (puedes editar/añadir) ----------
 const PRODUCTS = [
   { id: 'gtr-ac-01', name: 'Guitarra Acústica Fender', category: 'Instrumento', price: 150000, badge: 'Oferta', img: 'ACO.jpg' },
-  { id: 'kbd-ym-01', name: 'Teclado Yamaha', category: 'MIDI', price: 350000, img: 'yam.jpg' },
+  { id: 'kbd-ym-01', name: 'Teclado Yamaha', category: 'MIDI', price: 350000, img: 'YAM.jpg' },
   { id: 'in-ear-01', name: 'In-Ear KZ EDX Pro', category: 'Accesorio', price: 80000, img: 'EDX.jpg', badge: 'Nuevo' },
   { id: 'midi-kb-01', name: 'Controlador MIDI 49 teclas', category: 'MIDI', price: 420000, img: 'midi.jpg' },
   { id: 'seq-01', name: 'Paquete secuencias EDM', category: 'Secuencia', price: 45000, img: 'sec.png' },
