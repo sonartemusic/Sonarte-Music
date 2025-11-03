@@ -58,7 +58,7 @@ const PRODUCTS = [
     name: "Behringer UMC22 U-Phoria",
     category: "MIDI",
     price: 480000,
-    img: "umc.jpg",
+    img: "UMC.jpg",
     desc: "Interface de audio USB con preamplificador MIDAS. Ideal para home studio.",
   },
   {
