@@ -14,7 +14,7 @@ const PRODUCTS = [
   { id: 'in-ear-01', name: 'In-Ear KZ EDX Pro', category: 'Accesorio', price: 80000, img: 'EDX.jpg', badge: 'Nuevo' },
   { id: 'midi-kb-01', name: 'Controlador MIDI 49 teclas', category: 'MIDI', price: 420000, img: 'midi.jpg' },
   { id: 'seq-01', name: 'Paquete secuencias EDM', category: 'Secuencia', price: 45000, img: 'sec.png' },
-  { id: 'amp-01', name: 'Amplificador 30W Fender', category: 'Accesorio', price: 220000, img: '30w.jpg' },
+  { id: 'amp-01', name: 'Amplificador 30W Fender', category: 'Accesorio', price: 220000, img: '30W.jpg' },
 
   // 🎧 Monitores de estudio
   {
@@ -22,7 +22,7 @@ const PRODUCTS = [
     name: "Monitores Behringer Studio 50USB",
     category: "Accesorio",
     price: 850000,
-    img: "50usb.jpg",
+    img: "50USB.jpg",
     desc: "Par de monitores activos de 5\" con entradas USB y RCA. Sonido preciso y balanceado para mezcla y producción.",
   },
   {
@@ -40,7 +40,7 @@ const PRODUCTS = [
     name: "Audífonos de Estudio Audio-Technica ATH-M40x",
     category: "Accesorio",
     price: 690000,
-    img: "m40x.jpg",
+    img: "M40X.jpg",
     desc: "Audífonos cerrados de monitoreo profesional, gran comodidad y respuesta precisa.",
   },
   {
@@ -48,7 +48,7 @@ const PRODUCTS = [
     name: "Audífonos In-Ear Shure SE215",
     category: "Accesorio",
     price: 880000,
-    img: "Shure.jpg",
+    img: "SHURE.jpg",
     desc: "In-ear profesionales con aislamiento de ruido y sonido detallado. Cable desmontable reforzado.",
   },
 
@@ -76,7 +76,7 @@ const PRODUCTS = [
     name: "Shure SM58",
     category: "Instrumento",
     price: 750000,
-    img: "sm.jpg",
+    img: "SM.jpg",
     desc: "Micrófono dinámico vocal, estándar de la industria por su durabilidad y sonido natural.",
   },
   {
@@ -84,7 +84,7 @@ const PRODUCTS = [
     name: "Behringer B-1 Condenser",
     category: "Instrumento",
     price: 680000,
-    img: "b1.jpg",
+    img: "B1.jpg",
     desc: "Micrófono de condensador cardioide ideal para voces e instrumentos acústicos.",
   },
   {
@@ -92,7 +92,7 @@ const PRODUCTS = [
     name: "AKG P120 Condenser",
     category: "Instrumento",
     price: 590000,
-    img: "akg.jpg",
+    img: "AKG.jpg",
     desc: "Micrófono condensador versátil con cápsula de 2/3” y respuesta suave.",
   },
 ];
