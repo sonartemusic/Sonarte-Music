@@ -11,9 +11,9 @@
 const PRODUCTS = [
   { id: 'gtr-ac-01', name: 'Guitarra Acústica Fender', category: 'Instrumento', price: 150000, badge: 'Oferta', img: 'img/ACO.jpg' },
   { id: 'kbd-ym-01', name: 'Teclado Yamaha', category: 'MIDI', price: 350000, img: 'img/yam.jpg' },
-  { id: 'in-ear-01', name: 'In-Ear KZ EDX Pro', category: 'Accesorio', price: 80000, img: 'img/EDX.jpg', badge: 'Nuevo' },
-  { id: 'midi-kb-01', name: 'Controlador MIDI 49 teclas', category: 'MIDI', price: 420000, img: 'img/midi.jpg' },
-  { id: 'seq-01', name: 'Paquete secuencias EDM', category: 'Secuencia', price: 45000, img: 'img/sec.png' },
+  { id: 'in-ear-01', name: 'In-Ear KZ EDX Pro', category: 'Accesorio', price: 80000, img: 'EDX.jpg', badge: 'Nuevo' },
+  { id: 'midi-kb-01', name: 'Controlador MIDI 49 teclas', category: 'MIDI', price: 420000, img: 'midi.jpg' },
+  { id: 'seq-01', name: 'Paquete secuencias EDM', category: 'Secuencia', price: 45000, img: 'sec.png' },
   { id: 'amp-01', name: 'Amplificador 30W Fender', category: 'Accesorio', price: 220000, img: 'img/30w.jpg' },
 
   // 🎧 Monitores de estudio
