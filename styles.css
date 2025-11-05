@@ -76,7 +76,7 @@ body{
 /* ====== HERO ====== */
 .hero {
   position: relative;
-  background: url('fondo.jpg') center/cover no-repeat;
+  background: url('FONDO.jpg') center/cover no-repeat;
   color: #fff;
   text-align: center;
   min-height: 400px;
@@ -134,7 +134,7 @@ body{
 
 
 .hero {
-  background: url('fondo.jpg') center/cover no-repeat;
+  background: url('FONDO.jpg') center/cover no-repeat;
 }
 
 
